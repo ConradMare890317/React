@@ -73,12 +73,21 @@ class App extends Component {
           pattern={searchTerm}
           onDismiss={this.onDismiss}
         />
-
-        <form>
-          <input type="text"
+      </div>
+    );
+  }
+}
+class Table extends Component {
+render() {
+  const { searchTerm, list } = this.state;
+return (
+    <div className="App">
+      <form>
+        <input type="text"
           value={searchTerm}
-          onChange={this.onSearchChange} />
-        </form>
+          onChange={this.onSearchChange}
+        />
+      </form>
 
         {list.filter(isSearched(searchTerm)).map(item =>
           
@@ -99,33 +108,28 @@ class App extends Component {
           </div>
         )}
       </div>
-    )}
+    );
+  }
 }
 
 
 
-class Search extends Component {
-  
-  render() {
+  class Search extends Component {
+    render() {
     const { value, onChange, children } = this.props;
-    
-      return (
-
-        <form>
-          {children}
-          <input
-            type="text"
-            value={value}
-            onChange={onChange}
-          />
-        </form>
-      );
+    return (
+    <form>
+    {children} <input
+    type="text"
+    value={value}
+    onChange={onChange}
+    />
+    </form>
+    );
     }
-  }
+    }
 
-class Table extends Component {
   
-  render() {
     const { list, pattern, onDismiss } = this.props;
     
     return (
@@ -140,19 +144,12 @@ class Table extends Component {
       <span>{item.points}</span>
       <span>
 
-          <button
-          onClick={() => onDismiss(item.objectID)}
-          type="button"
-          >
-              Dismiss
-            </button>
           </span>
         </div>
       )}
     </div>
     );
-  }
-}
+
 
 class Button extends Component {
   
