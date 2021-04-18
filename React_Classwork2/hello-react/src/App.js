@@ -1,20 +1,29 @@
-import React from 'react';
-import { Animate }  from 'react-simple-animate';
-import YourComponent from './YourComponent';
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
 
-export default ({ play, onCompleteCallBack }) => (
-  <Animate
-    play={play} // set play true to start the animation
-    duration={1} // how long is the animation duration
-    delay={0.3} // how many delay seconds will apply before the animation start
-    start={{ transform: 'translate(0, 0)' }}
-    end={{ transform: 'translate(10px, 10px)' }}
-    complete={{ display: 'none' }}
-    easeType="cubic-bezier(0.445, 0.05, 0.55, 0.95)"
-    onComplete={onCompleteCallBack} // call back function when animation is completed
-  >
-    <YourComponent />
-  </Animate>
-);
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        
+        <p>          
+          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque."          
+        </p>
+
+        <a
+          className="App-link"
+          href="https://github.com/ConradMare890317"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Conrad Maré
+        </a>
+        
+      </header>
+    </div>
+  );
+}
 
 export default App;

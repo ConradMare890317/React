@@ -1,30 +1,17 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { AnimateKeyframes } from "react-simple-animate";
-import { divStyle  } from "./styles";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-import "./styles.css";
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
-  function App() {
-    return (
-      <AnimateKeyframes
-      play={true}
-      pause={true}
-      iterationCount="infinite"
-      direction="alternate"
-      duration={5}
-      keyframes={[
-        'transform: rotateX(0) rotateY(0) rotateZ(0)',
-        'transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg)',
-      ]}
-  
-      >
-        <div style={divStyle} />
-      </AnimateKeyframes>
-
-    );
-  }
-
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
