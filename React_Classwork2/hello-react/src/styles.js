@@ -5,7 +5,7 @@ export const divStyle = {
     background: "#27253f",
     borderRadius: "10px"
 };
-
+  
 export const buttonStyle = {
     display: "block",
     height: 30,
