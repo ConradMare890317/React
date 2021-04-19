@@ -1,6 +1,5 @@
 import React from 'react';
 import './Catalog.css';
-import './Message.';
 
 
 class Catalog extends React.Component {
