@@ -3,6 +3,7 @@
 }
 
 .App-logo {
+<<<<<<< HEAD
   height: 75vmin;
   pointer-events: none;
 }
@@ -26,6 +27,25 @@
 
 .App-link {
   color: #007dab;
+=======
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 70px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+>>>>>>> a8f3c19671d1dabcd02462b3c05bdc552594974e
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +55,13 @@
   to {
     transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
   }
+}
+
+nav li {
+  display: inline-block;
+  padding: 5px;
+}
+
+nav li a {
+  color: white;
 }
