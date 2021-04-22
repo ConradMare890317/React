@@ -1,0 +1,88 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height:3vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 7s linear;
+  }
+}
+
+.App-header {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(15px + 2vmin);
+  color: rgba(3, 47, 56, 0.59);
+}
+
+.App-link {
+  color: #2786a0;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotateX(0) rotateY(360deg) rotateZ(126deg);
+  }
+  to {
+    transform: rotateX(126dege) rotateY(360deg) rotateZ(0deg);
+  }
+  from {
+    transform: rotateX(0) rotate(126deg) rotateZ(360deg0);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(0deg) rotateZ(126deg);
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotateX(0) rotateY(360deg) rotateZ(126deg);
+  }
+  to {
+    transform: rotateX(126dege) rotateY(360deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotateX(0) rotate(126deg) rotateZ(360deg0);
+  }
+  from {
+    transform: rotateX(360deg) rotateY(0deg) rotateZ(126deg);
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotateX(0) rotateY(360deg) rotateZ(126deg);
+  }
+  to {
+    transform: rotateX(126dege) rotateY(360deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotateX(0) rotate(126deg) rotateZ(360deg0);
+  }
+  from {
+    transform: rotateX(360deg) rotateY(0deg) rotateZ(126deg);
+  }
+}
+
+@keyframes App-logo-spin3 {
+  from {
+    transform: rotateX(126deg) rotateY(0deg) rotateZ(360deg);
+  }
+  to {
+    transform: rotateX(0deg) rotateY(360deg) rotate(0deg);
+  }
+}
+declare const DEFAULT_DURATION = 0.3;
+declare const DEFAULT_EASE_TYPE = "linear";
+declare const DEFAULT_DIRECTION = "normal";
+declare const DEFAULT_FILLMODE = "none";
+declare const RUNNING = "running";
+declare const ALL = "all";
+export { DEFAULT_DURATION, DEFAULT_EASE_TYPE, DEFAULT_DIRECTION, DEFAULT_FILLMODE, RUNNING, ALL, };
