@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { fadeIn } from 'animate-keyframes';
+//import { fadeIn } from 'animate-keyframes';
 
 class App extends Component {
 
