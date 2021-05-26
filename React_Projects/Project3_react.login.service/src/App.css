@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height:3vmin;
+  height: 3vmin;
   pointer-events: none;
 }
 
@@ -79,10 +79,3 @@
     transform: rotateX(0deg) rotateY(360deg) rotate(0deg);
   }
 }
-declare const DEFAULT_DURATION = 0.3;
-declare const DEFAULT_EASE_TYPE = "linear";
-declare const DEFAULT_DIRECTION = "normal";
-declare const DEFAULT_FILLMODE = "none";
-declare const RUNNING = "running";
-declare const ALL = "all";
-export { DEFAULT_DURATION, DEFAULT_EASE_TYPE, DEFAULT_DIRECTION, DEFAULT_FILLMODE, RUNNING, ALL, };
